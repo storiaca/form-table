@@ -1,6 +1,14 @@
 import React from "react";
 
-const InputText = ({ name, id, type, value, label, onChange }) => {
+const Input = ({
+  name,
+  id,
+  type,
+  value,
+  label,
+  onChange,
+  required = false,
+}) => {
   return (
     <div className="mb-3">
       <label htmlFor={id} className="form-label">
@@ -12,10 +20,11 @@ const InputText = ({ name, id, type, value, label, onChange }) => {
         type={type}
         value={value}
         className="form-control"
+        required={required}
         onChange={onChange}
       />
     </div>
   );
 };
 
-export default InputText;
+export default Input;

@@ -12,6 +12,15 @@ code {
     monospace;
 }
 
+.home-page,
+.not-found-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
 .form-login {
   max-width: 500px;
   width: 100%;
@@ -24,5 +33,13 @@ code {
 }
 
 .form-login h1 {
-  margin-bottom: 3rem;;
+  margin-bottom: 3rem;
+}
+
+.form-report .btn-submit {
+  margin-top: 2rem;
+}
+
+.table>:not(caption)>*>*.danger {
+  color: red;
 }
